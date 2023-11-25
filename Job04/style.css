@@ -1,0 +1,157 @@
+/* J'ai adapter les Media Queries pour les tailles d'écrans qui me convienne car 
+les tailles demandés dans la consigne ne sont pas adapter a mon écran */
+ 
+
+/* Styles généraux */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  
+/* Media query pour les écrans entre 767px et 1600px */
+@media screen and (min-width: 767px) and (max-width: 1600px) {
+  body {
+    margin: 0;
+    background-color: #275fa0;
+  }
+
+  header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    width: 60%; /* Largeur de la barre de menu */
+    margin: 0 auto; /* Centrer la barre horizontalement */
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #menu-toggle {
+   display: none; 
+   
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Pour aligner les éléments horizontalement */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    width: 100%; /* Prendre la largeur totale */
+  }
+  
+  .menu ul li {
+    padding: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+  
+  section {
+    background-color: #88c1d0;
+    margin: 2%;
+    padding: 90px;
+    width: 20%; /* Ajustez selon vos besoins */
+  }
+}
+
+
+  
+ 
+  
+  /* Media queries pour affichage mobile */
+  @media screen and (max-width: 767px) {
+
+    body{
+      margin: 0;
+      background-color: #ffca4b;
+    
+  }
+
+    header {
+    background-color: #000000;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+  
+    display: none;
+    position: absolute;
+    top: 8%;
+    left: -3%;
+    padding: 0px 10px;
+    width: 100%;
+    background-color: #000000;
+    
+  }
+  
+  .menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 50%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #menu-toggle {
+    display: none; 
+    
+   }
+   
+    
+  .menu ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center; 
+   /* Aligner les liens au centre */
+  }
+  
+  .menu ul li {
+    padding: 15px 0;
+    text-align: center; /* Centrer le texte */
+    width: 100%;
+
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+  
+    /* Styles pour les sections */
+  section {
+    background-color: #88c1d0;
+    margin: 3%;
+    padding: 100px;
+    width: 40%; 
+  }
+
+}
+

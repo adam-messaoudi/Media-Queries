@@ -1,0 +1,45 @@
+/* J'ai adapter les Media Queries pour les tailles d'écrans qui me convienne car 
+les tailles demandés dans la consigne ne sont pas adapter a mon écran */
+ 
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Media query pour les écrans >= 1150px */
+@media screen and (min-width: 1150px) {
+    section {
+        width: 20%; /* Quatre sections sur une ligne */
+        background-color: #88c1d0;
+        margin: 1%;
+        padding: 60px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+}
+
+/* Media query pour les écrans entre 700px et 1150px */
+@media screen and (min-width: 700px) and (max-width: 1150px) {
+    section {
+        width: 45%; /* Deux sections par ligne */
+        background-color: #88c1d0;
+        margin: 1%;
+        padding: 120px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* Media query pour les écrans <= 700px */
+@media screen and (max-width: 700px) {
+    section {
+        width: 90%; /* Une section par ligne */
+        background-color: #88c1d0;
+        margin: 1%;
+        padding: 80px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+}

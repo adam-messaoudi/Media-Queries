@@ -1,0 +1,27 @@
+/* J'ai adapter les Media Queries pour les tailles d'écrans qui me convienne car 
+les tailles demandés dans la consigne ne sont pas adapter a mon écran */
+ 
+
+/* Media query pour les écrans  */
+@media screen and (min-width: 1150px) and (max-width: 1680px) {
+    body{
+
+        background-color: #ffca4b;
+    }
+}
+
+/* Media query pour les écrans  */
+@media screen and (min-width: 750px) and (max-width: 1150px) {
+    body{
+
+        background-color: #275fa0;
+    }
+}
+
+/* Media query pour les écrans  */
+@media screen and (max-width: 750px) {
+    body{
+        background-color: #ffffff;
+
+    }
+}
